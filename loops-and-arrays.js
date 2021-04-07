@@ -4,13 +4,21 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
-const names = ["Henk", "Piet", "Fred", "Joop"];
-
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
+
+const names = ["Henk", "Piet", "Fred", "Joop"];
+console.log(names);
+
+for (let index = 0; index < names.length; index++) {
+    names[index] = names[index] + "je";
+}
+console.log(names);
+
+
 
 
 // ==========================================
@@ -26,6 +34,14 @@ const numbers = [2, 4, 5, 29, 38];
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 6, 12, 15, 87, 114 ];
+console.log(numbers);
+
+for (let multiply = 0; multiply < numbers.length; multiply++){
+    numbers[multiply] = numbers[multiply] * 3;
+}
+    console.log(numbers);
+
+    // console.log(numbers[multiply] * 3);
 
 
 // ==========================================
@@ -42,3 +58,9 @@ const squares = [30, 2, 8, 24, 11];
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
+console.log(squares);
+
+for (let volume = 0; volume < squares.length; volume++) {
+    squares[volume] = squares[volume] * squares[volume] * squares[volume];
+}
+console.log(squares);
